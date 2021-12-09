@@ -1,4 +1,5 @@
 import {useContext} from 'react'
+import Intro from './components/Intro';
 import Toggle from './components/Toggle';
 import { ThemeContext } from './context'
 
@@ -17,7 +18,8 @@ const App = () => {
   return (
   <div style={darkyMode}>
       <Toggle />
-    Hello world App!
+      <Intro />
+    
   </div>
 
   )};
