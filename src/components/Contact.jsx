@@ -61,6 +61,8 @@ const Right = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+margin-top: 30px;
+
 `
 
 const Desc = styled.p`
@@ -178,10 +180,10 @@ const Contact = () => {
                         freelancing if the right project comes along. me.  
                      </Desc>
                      <Form ref={formRef} onSubmit={handleSubmit}>
-                        <Input style={{backgroundColor: darkMode && "#333"}} required type="text" placeholder="Name" name="user_name" />
-                        <Input style={{backgroundColor: darkMode && "#333"}} required type="text" placeholder="Subject" name="user_subject" />
-                        <Input style={{backgroundColor: darkMode && "#333"}} required type="email" placeholder="Email" name="user_email" />
-                        <TextArea style={{backgroundColor: darkMode && "#333"}} required rows="5" placeholder="Message" name="message" />
+                        <Input style={{backgroundColor: darkMode && "#333", color: darkMode && "white"}} required type="text" placeholder="Name" name="user_name" />
+                        <Input style={{backgroundColor: darkMode && "#333", color: darkMode && "white"}} required type="text" placeholder="Subject" name="user_subject" />
+                        <Input style={{backgroundColor: darkMode && "#333", color: darkMode && "white"}} required type="email" placeholder="Email" name="user_email" />
+                        <TextArea style={{backgroundColor: darkMode && "#333", color: darkMode && "white"}} required rows="5" placeholder="Message" name="message" />
                         <Button>Submit</Button>
                         {done && "Thank You..."}
                      </Form>
