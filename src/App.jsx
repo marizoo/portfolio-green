@@ -1,4 +1,5 @@
 import {useContext} from 'react'
+import About from './components/About';
 import Intro from './components/Intro';
 import Toggle from './components/Toggle';
 import { ThemeContext } from './context'
@@ -19,7 +20,7 @@ const App = () => {
   <div style={darkyMode}>
       <Toggle />
       <Intro />
-    
+      <About />
   </div>
 
   )};

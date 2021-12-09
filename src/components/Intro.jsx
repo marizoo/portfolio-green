@@ -33,7 +33,7 @@ const LeftWrapper = styled.div`
 
 const Greeting = styled.h2`
 font-size: 30px;
-  font-weight: 300;
+font-weight: 300;
 `
 
 const Name = styled.h1`
@@ -42,7 +42,7 @@ font-size: 60px;
 
 const Title = styled.div`
 height: 50px;
-  overflow: hidden;
+overflow: hidden;
 `
 
 const move = keyframes`
@@ -87,7 +87,7 @@ ${mobile({ display: "none" })}
 
 const Right = styled.div`
 flex: 1;
-  position: relative;
+position: relative;
 `
 
 const RightBackground = styled.div`
@@ -98,6 +98,8 @@ clip-path: polygon(100% 0%, 100% 51%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
   position: absolute;
   top: 0;
   right: 0;
+
+  
 `
 
 const RightImage = styled.img`
