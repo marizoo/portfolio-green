@@ -1,10 +1,12 @@
 import React from 'react'
 import styled, {keyframes} from 'styled-components'
 import Me from '../img/kid-girl.png'
+import { mobile } from '../responsive'
 
 const Container = styled.div`
 display: flex;
 height: 100vh;
+${mobile({ flexDirection: "column" })}
 `
 
 const Left = styled.div`
@@ -12,6 +14,13 @@ flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
+  ${mobile({ 
+      padding: "10px",
+      alignItems: "center",
+      justifyContent: "center",
+      textAlign: "center",
+      height: "100%",
+   })}
 `
 
 const LeftWrapper = styled.div`
@@ -73,7 +82,7 @@ const MouseIconStyle = {
 }
 
 const Desc = styled.p`
-
+${mobile({ display: "none" })}
 `
 
 const Right = styled.div`
